@@ -59,9 +59,7 @@ function App() {
           }}
         >
           <h2>
-            <a href="https://github.com/shashank99928">
-              Click here to view my portfolio 🐱
-            </a>
+              Click here to view my portfolio 🐱  
           </h2>
           <h1>PS Click on Cat emoji</h1>
         </ParallaxLayer>
