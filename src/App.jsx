@@ -1,9 +1,9 @@
-import { useRef } from 'react';
-import moon from './moon.png';
-import land from './land.png';
-import cat from './cat.gif';
+import { useRef } from "react";
+import moon from "./moon.png";
+import land from "./land.png";
+import cat from "./cat.gif";
 
-import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 function App() {
   const ref = useRef();
@@ -11,21 +11,13 @@ function App() {
   return (
     <div>
       <Parallax pages={4} ref={ref}>
-        {/* <ParallaxLayer speed={1}>
-            <h2>Welcome to my website</h2>
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={1} speed={0.5}>
-            <h2>Web development is fun!</h2>
-        </ParallaxLayer> */}
-
         <ParallaxLayer
           offset={0}
           speed={1}
           factor={2}
           style={{
             backgroundImage: `url(${moon})`,
-            backgroundSize: 'cover',
+            backgroundSize: "cover",
           }}
         />
 
@@ -35,13 +27,13 @@ function App() {
           factor={4}
           style={{
             backgroundImage: `url(${land})`,
-            backgroundSize: 'cover',
+            backgroundSize: "cover",
           }}
         ></ParallaxLayer>
 
         <ParallaxLayer
           sticky={{ start: 0.9, end: 2.5 }}
-          style={{ textAlign: 'center' }}
+          style={{ textAlign: "center" }}
         >
           <img src={cat} />
         </ParallaxLayer>
@@ -59,9 +51,15 @@ function App() {
           speed={2}
           onClick={() => ref.current.scrollTo(0)}
         >
-          <h2>Hi Mom!</h2>
+          <h2>
+            <a href="https://github.com/shashank99928">
+              Click here to view my portfolio 🐱
+            </a>
+          </h2>
+          <h1>PS Click on Cat emoji</h1>
         </ParallaxLayer>
       </Parallax>
+      <footer>credit @Jeff Danely</footer>
     </div>
   );
 }
