@@ -49,7 +49,10 @@ function App() {
         <ParallaxLayer
           offset={3}
           speed={2}
-          onClick={() => ref.current.scrollTo(0)}
+          onClick={() => {
+            ref.current.scrollTo(0);
+            window.replace("https://github.com/shashank99928");
+          }}
         >
           <h2>
             <a href="https://github.com/shashank99928">
