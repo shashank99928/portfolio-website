@@ -1,5 +1,5 @@
-# React Spring Parallax Demo
+# portfolio website
 
-A skydiving cat with React Spring Parallax.
+credits to fireship.
 
 Watch the [Parallax Tutorial](https://youtu.be/UgIwjLg4ONk)
