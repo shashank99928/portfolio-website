@@ -43,7 +43,7 @@ function App() {
           speed={0.05}
           onClick={() => ref.current.scrollTo(3)}
         >
-          <h2>Welcome to my website</h2>
+          <h2 className="subtitle">Welcome to my website</h2>
         </ParallaxLayer>
 
         <ParallaxLayer

@@ -21,11 +21,27 @@ h2 {
   text-align: center;
   font-family: cubano, sans-serif;
   font-weight: 400;
-  color: white;
+     color: linear-gradient(
+      hsl(239, 50%, 30%) 15%,
+      hsl(239, 50%, 40%) 25%,
+      hsl(200, 60%, 50%) 35%,
+      hsl(100, 70%, 80%) 45%,
+      hsl(60, 100%, 98%) 50%,
+      hsl(240, 0%, 0%) 52%,
+      hsl(240, 10%, 10%) 60%,
+      hsl(240, 50%, 30%) 70%,
+      hsl(220, 70%, 60%) 80%,
+      hsl(212, 92%, 76%) 85%
+    );
+
   font-size: 10vw;
-	text-shadow: -0.04em 0.04em 0 #000,
-				  0.04em 0.04em 0 #000,
-				 0.04em -0.04em 0 #000,
-				-0.04em -0.04em 0 #000;
+
 }
   
+
+.subtitle {
+  /* ... */
+  transform: rotateZ(-10deg);
+  color: hsl(263deg 100% 51%); /* pink */ 
+  text-shadow: -2px -3px hsl(53, 100%, 81%) /* yellow */, 5px 5px hsl(240, 90%, 61%); /* blue */
+}
