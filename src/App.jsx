@@ -34,7 +34,7 @@ function App() {
         <ParallaxLayer
           onClick={() => {
             alert("redirect to cat page");
-            window.replace("https://github.com/shashank99928");
+            window.location.href("https://github.com/shashank99928");
           }}
           sticky={{ start: 0.9, end: 2.5 }}
           style={{ textAlign: "center" }}
@@ -55,7 +55,7 @@ function App() {
           speed={2}
           onClick={() => {
             ref.current.scrollTo(0);
-            window.replace("https://github.com/shashank99928");
+            window.location.href("https://github.com/shashank99928");
           }}
         >
           <h2>
