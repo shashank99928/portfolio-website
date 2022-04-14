@@ -34,7 +34,7 @@ function App() {
         <ParallaxLayer
           onClick={() => {
             alert("redirect to cat page");
-            window.open("https://github.com/shashank99928","_blank");
+            window.open("https://github.com/shashank99928", "_blank");
           }}
           sticky={{ start: 0.9, end: 2.5 }}
           style={{ textAlign: "center" }}
@@ -47,7 +47,7 @@ function App() {
           speed={0.05}
           onClick={() => ref.current.scrollTo(3)}
         >
-          <h2 className="subtitle">Welcome to my website</h2>
+          <h2 className="subtitle">Welcome scroll 👇</h2>
         </ParallaxLayer>
 
         <ParallaxLayer
@@ -55,12 +55,10 @@ function App() {
           speed={2}
           onClick={() => {
             ref.current.scrollTo(0);
-            window.open("https://github.com/shashank99928","_blank");
+            window.open("https://github.com/shashank99928", "_blank");
           }}
         >
-          <h2>
-              Click here to view my portfolio 🐱  
-          </h2>
+          <h2>Click here to view my portfolio 🐱</h2>
           <h1>PS Click on Cat emoji</h1>
         </ParallaxLayer>
       </Parallax>
